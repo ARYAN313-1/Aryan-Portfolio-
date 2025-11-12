@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Aryan Srivastava — Portfolio</title>
+<meta name="description" content="Portfolio of Aryan Srivastava — B.Tech IT Student | Python, MySQL, Data Science & Automation Enthusiast" />
+<style>
+  :root{
+    --bg:#0f1724;
+    --card:#0b1220;
+    --muted:#9aa4b2;
+    --accent:#4f46e5;
+    --glass:rgba(255,255,255,0.04)
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0;
+    font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+    color:#e6eef8;
+    background-image:url('https://images.unsplash.com/photo-1503264116251-35a269479413');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    -webkit-font-smoothing:antialiased;
+  }
+  .container{
+    max-width:980px;
+    margin:36px auto;
+    padding:28px;
+    background:rgba(0,0,0,0.55);
+    border-radius:16px
+  }
+
+  header{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-bottom:24px
+  }
+  .avatar{
+    width:110px;
+    height:110px;
+    border-radius:18px;
+    overflow:hidden;
+    background:linear-gradient(135deg,#152033,#0b2450);
+    display:flex;
+    align-items:center;
+    justify-content:center
+  }
+  .avatar img{
+    width:100%;
+    height:100%;
+    object-fit:cover
+  }
+
+  h1{margin:0;font-size:28px}
+  .name-wrap{
+    display:inline-block;
+    transform:translateX(-150%);
+    opacity:0;
+    transition:transform 2.5s ease,opacity 2.5s ease
+  }
+  .name-wrap.visible{
+    transform:translateX(0);
+    opacity:1
+  }
+
+  .subtitle{color:var(--muted);margin-top:6px}
+  .tagline{
+    margin-top:12px;
+    background:var(--glass);
+    padding:10px;
+    border-radius:12px;
+    display:inline-block
+  }
+  
+  main{
+    margin-top:26px;
+    display:grid;
+    grid-template-columns:1fr 320px;
+    gap:30px
+  }
+  .card{
+    background:linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+    padding:18px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    transition:transform 0.25s ease,box-shadow 0.25s ease;
+    margin-bottom:24px
+  }
+  .card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 12px 35px rgba(0,0,0,0.45)
+  }
+
+  #certifications{
+    background:linear-gradient(135deg, #1b2a4d, #0f172a);
+    padding:18px;
+    border-radius:14px;
+    box-shadow:0 6px 18px rgba(0,0,0,0.4)
+  }
+
+  aside{position:relative}
+  .skills{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px;
+    margin-top:10px
+  }
+
+  .project{
+    margin-bottom:18px;
+  }
+  .project h3{
+    margin-bottom:6px;
+    transition:0.3s ease;
+  }
+  .project h3:hover{
+    color:var(--accent);
+    text-shadow:0 0 10px var(--accent);
+  }
+
+  footer{
+    margin-top:28px;
+    color:var(--muted);
+    font-size:13px;
+    text-align:center
+  }
+
+  @media (max-width:900px){
+    main{grid-template-columns:1fr}
+    aside{order:2}
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="avatar"><img src="myphoto.jpg" alt="Aryan"></div>
+    <div>
+      <h1><span class="name-wrap" id="name-wrap">Aryan Srivastava</span> <span class="muted">• B.Tech IT Student</span></h1>
+      <div class="subtitle">Python, MySQL, Data Science & Automation Enthusiast — Lucknow, Uttar Pradesh, India</div>
+      <div class="tagline">Motivated and detail-oriented, eager to contribute to dynamic tech teams with clean, impactful code.</div>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <!-- About Me -->
+      <div class="card">
+        <h2>About Me</h2>
+        <p class="muted">
+          I am a passionate and dedicated B.Tech Information Technology student at SRMCEM, Lucknow, with a strong foundation in Python, MySQL, and web development.
+          I have a keen interest in data science, automation, and AI applications, and enjoy building practical projects that solve real-world problems.
+          My strengths include analytical thinking, problem-solving, and quick learning, which allow me to adapt to new technologies effectively.
+          I am seeking opportunities to contribute my skills to innovative projects while continuing to grow as a developer.
+        </p>
+      </div>
+
+      <!-- Projects -->
+      <div class="card projects">
+        <h2>Projects</h2>
+
+        <div class="project visible">
+          <h3>
+            <a href="https://gitlab.com/aryan.srivastava.11b/careersuggestion/-/tree/8f6782065355e458d4fadcca9fe51448546fff9a/"
+               target="_blank"
+               style="color:#e6eef8;text-decoration:none;">
+              AI-Driven Career Suggestion System
+            </a>
+          </h3>
+          <p class="muted">
+            A machine learning–based system that analyzes user skills, interests, and academic data to suggest the best career paths with intelligent recommendations.
+          </p>
+        </div>
+
+        <div class="project visible">
+          <h3>PharmaSphere — 360° Control Over</h3>
+          <p class="muted">
+            A comprehensive web-based solution offering 360° control over pharmacy operations — managing stock, suppliers, sales records, and expiry tracking efficiently.
+          </p>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="card Education">
+        <h2>Education</h2>
+        <ul class="muted">
+          <li><strong>B.Tech (IT)</strong> — SRMCEM Lucknow (2026)</li>
+          <li><strong>Intermediate (12th)</strong> — Montfort Inter College, Lucknow (2022)</li>
+          <li><strong>High School (10th)</strong> — Montfort Inter College, Lucknow (2020)</li>
+        </ul>
+      </div>
+
+      <!-- Certifications -->
+      <div class="card certifications" id="certifications">
+        <h2>Certifications</h2>
+        <ul class="muted">
+          <li><a href="https://drive.google.com/file/d/1PeZ70NCB3Lpi8KFI_ZbMc7gyDTwEPbXU/view?usp=sharing" target="_blank">Summer Training (Gen AI and Deep Learning) (LLM Model)</a></li>
+          <li><a href="https://courses.yl-ptech.skillsnetwork.site/certificates/ded284b8d24b4bdca4fde1c642087439" target="_blank">Data Science Tools (IBM)</a></li>
+          <li><a href="https://courses.cognitiveclass.ai/certificates/9fbd4ab674a244c9b6bb5dfbe2080afd" target="_blank">IBM Cloud Essentials V3</a></li>
+          <li><a href="https://drive.google.com/file/d/1TV5EMshh2E9nbdbcWn6OeiGzfvSD3Lov/view?pli=1" target="_blank">Python 101 for Data Science</a></li>
+          <li><a href="https://drive.google.com/file/d/1TWER96U6DONkmhyR8g2rg40vpo4lCZF7/view" target="_blank">Big Data 101</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <aside>
+      <!-- Contact -->
+      <div class="card contact-card">
+        <h3>Contact</h3>
+        <p class="muted">Email: <a href="mailto:aryan.srivas.tablet@gmail.com">aryan.srivas.tablet@gmail.com</a></p>
+        <p class="muted">LinkedIn: <a href="https://www.linkedin.com/in/aryan-srivastava-770136221" target="_blank">linkedin.com/in/aryan-srivastava-770136221</a></p>
+        <p class="muted">GitHub: <a href="https://github.com/ARYAN313-1" target="_blank">github.com/ARYAN313-1</a></p>
+      </div>
+
+      <!-- Skills -->
+      <div class="card">
+        <h3>Skills</h3>
+        <div class="skills" id="skills-list"></div>
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <div class="muted">Made by — Aryan Srivastava</div>
+  </footer>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', ()=>{
+    setTimeout(()=>{
+      document.getElementById('name-wrap').classList.add('visible');
+    }, 200);
+
+    const skills = ['Python','MySQL','HTML','CSS','MS Excel','MS PowerPoint','MS Word','Project Management','Canva'];
+    const skillsList = document.getElementById('skills-list');
+    skills.forEach(s=>{
+      const sp=document.createElement('span');
+      sp.className='badge';
+      sp.textContent=s;
+      skillsList.appendChild(sp);
+    });
+
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        cards.forEach(c => { if(c !== card) c.style.filter = 'blur(1.5px)'; });
+      });
+      card.addEventListener('mouseleave', () => {
+        cards.forEach(c => c.style.filter = '');
+      });
+    });
+  });
+</script>
+</body>
+</html>
